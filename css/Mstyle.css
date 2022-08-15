@@ -1,0 +1,132 @@
+@media (min-width:375px) and (max-width:667px){
+    html{
+        font-size:15px;
+    }
+}
+@media (min-width:668px) and (max-width:1800px){
+    html{
+        font-size:20px;
+    }
+}
+/* 默认样式 */
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    /* 禁止用户双击选中文字 */
+    user-select: none;
+    /* background-color: black; */
+}
+
+li{
+    list-style: none;
+} 
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.bor-black{
+    border:1px solid black;
+}
+.bor-white{
+    border:1px solid white;
+}
+.flex{
+    display:flex;
+}
+.flex1{
+    flex:1;
+}
+
+.column{
+    flex-direction: column;
+}
+.cen{
+    margin:0 auto;
+}
+/* 外box样式 */
+#box{
+    height:130vh;
+    background:black;
+    color:#fff;
+}
+#box img{
+    width:14rem;
+}
+
+/* 上方内容 */
+.top{
+    height: 6.5rem;
+    border: black;
+    background: black;
+    text-align:center;
+}
+
+/* 下方内容 */
+.bottom{
+    width:11rem;
+    border:1px solid black;
+    text-align:center;
+}
+
+.bottom li{
+    height: 3rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 3rem;
+    margin-top:1.25rem;
+}
+
+.category{
+    width:11rem;
+    margin:0 auto;
+    display:none;
+}
+.category div{
+    height: 2rem;
+    width: 7rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 2rem;
+    margin-top: 0.8rem;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+/* 体验课内容 */
+.bottom .course{
+    display:none;
+}
+
+.bottom .course div{
+    height: 3rem;
+    width:8rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 3rem;
+    margin-top:1.25rem;
+    background:#fff;
+    color:#000;
+    font-weight:bold;
+}
+.category a{
+    color:#000;
+}
+
+.course div a{
+    color:#000;
+}
+
+/* 将web端内容隐藏 */
+.list_show{
+    display:none;
+}
+.right{
+    display:none;
+}

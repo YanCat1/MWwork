@@ -1,0 +1,163 @@
+html{
+    font-size:16px;
+}
+/* 默认样式 */
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    /* 禁止用户双击选中文字 */
+    user-select: none;
+    /* background-color: black; */
+}
+
+li{
+    list-style: none;
+} 
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.bor-black{
+    border:1px solid black;
+}
+.bor-white{
+    border:1px solid white;
+}
+.flex{
+    display:flex;
+}
+.flex1{
+    flex:1;
+}
+
+.column{
+    flex-direction: column;
+}
+.cen{
+    margin:0 auto;
+}
+/* 外box样式 */
+#box{
+    height:100vh;
+    background:black;
+    flex-direction: row;
+    overflow: auto;
+    flex-direction: row;
+}
+/* 左侧列表内容 */
+#box .top{
+    width: 10.25rem;
+    border: 1px solid #fff;
+}
+
+#box .top img{
+    width: 10.25rem;
+}
+
+#box .list_show li{
+    color: #fff;
+    height: 3rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    line-height: 3rem;
+    margin-top: 1.25rem;
+    text-align: center;
+    transition:0.3s;
+    cursor: pointer;
+}
+#box .list_show li:hover{
+    cursor: pointer;
+    color: #000;
+    height: 3rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    line-height: 3rem;
+    margin-top: 1.25rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* 新入职员工 */
+.right{
+    border:1px solid #fff;
+}
+.right .right_top{
+    height:4.1rem;
+    color:#fff;
+    text-align: center;
+    line-height:4.1rem;
+}
+.right .show{
+    height:89%;
+    width:100%;
+}
+
+/* 新入职员工分类 */
+.grouping{
+    width: 10.2rem;
+    height: 5rem;
+    color: black;
+    text-align: center;
+    margin-top: 0.5rem;
+    display: none;
+}
+.grouping div{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px solid #000;
+    margin: 3px 10px;
+    transition:0.3s;
+    color:#fff;
+}
+.grouping div:hover{
+    background:#fff;
+    color:#000;
+    cursor: pointer;
+}
+
+/* 显示体验课信息内容 */
+.myAttempt{
+    position:relative
+}
+.Ngrouping{
+    position: absolute;
+    top: 19.25rem;
+    left: 11.25rem;
+    width:6.25rem;
+    height:12.5rem;
+    text-align: center;
+    display: none;
+}
+.Ngrouping div{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color:#000;
+    background-color: #fff;
+    margin-top: 5px;
+    transition:0.3s;
+}
+.Ngrouping div:hover{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color:#fff;
+    background-color: #000;
+    margin-top: 5px;
+}
+
+
+
+/* 将移动端内容隐藏 */
+.container{
+    display: none;
+}
