@@ -1,13 +1,4 @@
-@media (min-width:375px) and (max-width:667px){
-    html{
-        font-size:15px;
-    }
-}
-@media (min-width:668px) and (max-width:1800px){
-    html{
-        font-size:20px;
-    }
-}
+
 /* 默认样式 */
 *{
     margin:0px;

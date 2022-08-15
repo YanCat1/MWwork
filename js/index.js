@@ -49,11 +49,11 @@ experience.onclick=function(){
     }
 }
 
-pythonSrc = "//player.bilibili.com/player.html?aid=644200934&bvid=BV1SY4y1w7H3&cid=794246857&page=1&high_quality=1&danmaku=0&as_wide=1"
-wedoSrc = "//player.bilibili.com/player.html?aid=644200934&bvid=BV1SY4y1w7H3&cid=794246857&page=1&high_quality=1&danmaku=0&as_wide=1"
-cSrc = "//player.bilibili.com/player.html?aid=644200934&bvid=BV1SY4y1w7H3&cid=794246857&page=1&high_quality=1&danmaku=0&as_wide=1"
-spikeSrc = "//player.bilibili.com/player.html?aid=644200934&bvid=BV1SY4y1w7H3&cid=794246857&page=1&high_quality=1&danmaku=0&as_wide=1"
-childSrc = "//player.bilibili.com/player.html?aid=644200934&bvid=BV1SY4y1w7H3&cid=794246857&page=1&high_quality=1&danmaku=0&as_wide=1"
+pythonSrc = "//player.bilibili.com/player.html?aid=216923935&bvid=BV1ea411P7Xw&cid=803023660&page=1&high_quality=1&danmaku=0&as_wide=1"
+wedoSrc = "//player.bilibili.com/player.html?aid=216923935&bvid=BV1ea411P7Xw&cid=803023660&page=1&high_quality=1&danmaku=0&as_wide=1"
+cSrc = "//player.bilibili.com/player.html?aid=216923935&bvid=BV1ea411P7Xw&cid=803023660&page=1&high_quality=1&danmaku=0&as_wide=1"
+spikeSrc = "//player.bilibili.com/player.html?aid=216923935&bvid=BV1ea411P7Xw&cid=803023660&page=1&high_quality=1&danmaku=0&as_wide=1"
+childSrc = "//player.bilibili.com/player.html?aid=216923935&bvid=BV1ea411P7Xw&cid=803023660&page=1&high_quality=1&danmaku=0&as_wide=1"
 
 function click(ele,src){
     ele.onclick=function(){
@@ -61,6 +61,9 @@ function click(ele,src){
         course.style.display = 'none'
         experienceI.className = 'experienceI iconfont icon-arrow_left_fat'
         flag1 = false
+        Mflag = false
+        Ngrouping.style.display = 'none';
+        h1.innerText = ele.innerText
     }
 }
 click(python,pythonSrc)
@@ -127,6 +130,20 @@ myAttempt.onclick=function(){
         Ngrouping.style.display = 'none';
         attempt.className = "attempt iconfont icon-zuojiantou-"
     }
+}
+
+// 童程 童创效果改变
+code = document.querySelector('.code')
+showData = document.querySelector('.showData')
+codeBot = document.querySelector('.codeBot')
+code.onclick=function(){
+    h1.innerText = code.innerText
+    showData.src='./童程新员工入职需知.pdf'
+}
+
+codeBot.onclick=function(){
+    h1.innerText = codeBot.innerText
+    showData.src='./童创新员工入职需知.pdf'
 }
 
 
